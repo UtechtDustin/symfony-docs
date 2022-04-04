@@ -175,7 +175,7 @@ Finally, you need to update the code of the controller that handles the form::
             }
 
             return $this->renderForm('product/new.html.twig', [
-                'form' => $form,
+                'form' => $form->createView(),
             ]);
         }
     }
